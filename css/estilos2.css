@@ -1,0 +1,191 @@
+div.logo img{
+    width: 400px;
+    height:200px ;
+}
+img.rusia{
+    width: 300px;
+    height:200px ;
+}
+
+   
+html{
+    box-sizing: border-box;
+
+}
+  
+*, *:before,:after {
+ box-sizing: inherit
+
+}
+    
+*{
+margin:0;
+padding: 0;
+}
+body{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+header{
+    background-color: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
+
+}
+
+div.contenedor{
+width: 1200px;
+margin: 0 auto
+}
+/**navegacion**/
+.navegacion{
+    background-color: rgb(4, 35, 82,1)
+    
+}
+nav{
+    width: 1200px;
+    margin: 0 auto;
+    position:relative;
+    background-color: rgb(4, 35, 82,1)
+}
+nav ul{
+    list-style: none
+}
+nav > ul > li{
+float: left;
+}
+nav ul::after {
+    content:'';
+    display: block;
+    clear:both
+}
+nav ul li a{
+    display: inline-block;
+    width: 200px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px
+}
+nav ul li a:hover {
+    background-color: #00b8e4;
+
+
+}
+/** Segundo nivel**/
+nav ul ul{
+    position: absolute;
+    top: 100%;
+    background-color: rgb(0, 184, 228,0.5);
+    display: none
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li:hover{ 
+    background-color: rgb(0, 184, 228,0.5)
+}
+    
+/* contenido principal*/
+div.contenido::after{
+    content:'';
+    display: block;
+    clear:both
+
+} 
+
+main{
+    width: 70%;
+    float:left ;
+    padding-right: 40px
+}
+/** entradas de post**/
+article{
+    margin-top: 50px
+    
+}
+h2{
+    color:#c4ae7f;
+    margin-bottom: 20px
+}
+
+article img{
+    float: left;
+    margin-right: 50px
+   
+}
+article p{
+    line-height: 2;
+    text-align: justify
+}
+.botton{
+ background-color: #c4ae7f;
+ padding: 0 30px;
+ display: inline-block;
+ font-weight: bold;
+ color: white;
+ text-decoration: none;
+ font-weight: bold;
+ border-radius:10px
+}
+/** sidebar**/
+aside{
+    float: right;
+    width: 30%
+}
+aside ul{
+list-style: none
+}
+aside ul li{
+    padding: 10px 0 10px 10px
+}
+aside ul li:hover {
+    background-color: rgb(0, 184, 228,0.5)
+
+}
+aside ul li a{
+    color: royalblue;
+    text-decoration: none
+}
+aside ul li:hover a{
+    color: white
+}
+footer {
+    background: rgb(53,106,160); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(53,106,160,1) 0%, rgba(53,106,160,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=0 );
+    padding-top: 40px;
+    margin-top: 30px
+}
+footer h2{
+    color: white
+}
+footer div.nosotros{
+    float: left;
+    width: 30%;
+    color: white
+}
+footer div.menu{
+    float: right;
+    width: 40%
+}
+footer div::after{
+    content:'';
+    display: block;
+    clear:both
+}
+footer nav{
+    width: auto
+}
+footer nav ul li a{
+    width: auto
+}
+p.copyrigth{
+    padding: 20px 0;
+    text-align: center;
+    color: white
+}
+
+
